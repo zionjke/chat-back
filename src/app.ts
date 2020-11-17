@@ -1,11 +1,12 @@
 import express from "express";
 import http from "http";
 import socketIO from 'socket.io'
-import {type} from "os";
+
 
 
 const app = express();
 const server = http.createServer(app);
+// @ts-ignore
 const socket = socketIO(server);
 
 
